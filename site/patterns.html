@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patterns d'interaction IA — Wave-Seed</title>
+  <meta name="description" content="Génération quotidienne de contenu via GitHub Actions. La machine qui produit des traces. Collaboration humain-IA documentée.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="index.html" style="color: inherit; text-decoration: none;"><span>Wave</span>-Seed</a></div>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" data-path="index.html">Accueil</a></li>
+      <li><a href="manifeste.html" data-path="manifeste.html">Manifeste</a></li>
+      <li><a href="graines.html" data-path="graines.html">Les Grainse</a></li>
+      <li><a href="anti-totalization.html" data-path="anti-totalization.html">Anti-Totalization</a></li>
+      <li><a href="patterns.html" data-path="patterns.html" class="active">Patterns</a></li>
+      <li><a href="a-propos.html" data-path="a-propos.html">À propos</a></li>
+      <li class="lang-switch">
+        <a href="patterns.html" class="current">FR</a>
+        <a href="en/patterns.html">EN</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="text-page">
+  <div class="container">
+
+    <div class="lang-available">
+      Disponible aussi en : <a href="en/patterns.html">English</a> — Document source en anglais.
+    </div>
+
+    <p class="meta">La Machine · Traces quotidiennes</p>
+    <h1>Patterns d'interaction IA</h1>
+    <p class="subtitle">La machine qui produit des traces</p>
+    <p class="meta">Projet GitHub : <a href="https://github.com/Mesnildot/ai-interaction-patterns" target="_blank" rel="noopener">Mesnildot/ai-interaction-patterns</a></p>
+
+    <div class="accent-line"></div>
+
+    <!-- ═══════════════════ Qu'est-ce que c'est ═══════════════════ -->
+    <h2 class="chapter-title">Qu'est-ce que c'est ?</h2>
+
+    <p>Une collection de patterns d'interaction pratiques pour travailler efficacement avec les outils d'IA. Le contenu est auto-généré quotidiennement par interaction humain-IA (API Claude) sur la base de modèles reflétant l'expérience pratique.</p>
+
+    <p>C'est la machine qui tourne. Chaque jour, une Action GitHub produit un nouveau fragment — un pattern, une réflexion, une observation sur ce qui fonctionne (ou ne fonctionne pas) dans la collaboration quotidienne avec les modèles de langage.</p>
+
+    <!-- ═══════════════════ Comment ça marche ═══════════════════ -->
+    <h2 class="chapter-title">Comment ça marche</h2>
+
+    <p>Une GitHub Action s'exécute quotidiennement et :</p>
+
+    <ul class="practices-list">
+      <li>Choisit un type de contenu et un modèle au hasard</li>
+      <li>Génère du contenu pratique via l'API Claude</li>
+      <li>Commite le nouveau fichier dans le dépôt</li>
+    </ul>
+
+    <p>Tout le contenu est transparentement auto-généré (voir le pied de page de chaque fichier). Ce n'est pas du contenu humain présenté comme tel — c'est une collaboration humain-IA documentée.</p>
+
+    <!-- ═══════════════════ Structure ═══════════════════ -->
+    <h2 class="chapter-title">Structure</h2>
+
+    <ul class="practices-list">
+      <li><strong>prompts/</strong> — Modèles de prompt réutilisables et cadres</li>
+      <li><strong>docs/</strong> — Bonnes pratiques et leçons apprises</li>
+      <li><strong>scripts/</strong> — Utilitaires pour les workflows IA</li>
+      <li><strong>discussions/</strong> — Réflexions sur la collaboration humain-IA</li>
+    </ul>
+
+    <p>Chaque fichier est autonome et utile en soi. Parcourez n'importe quel dossier.</p>
+
+    <!-- ═══════════════════ Pour qui ═══════════════════ -->
+    <h2 class="chapter-title">Pour qui ?</h2>
+
+    <p><strong>Pour les praticiens :</strong> Trouvez des patterns qui fonctionnent dans les workflows IA réels.</p>
+
+    <p><strong>Pour les chercheurs :</strong> Observez comment les patterns d'interaction affectent la qualité des sorties IA.</p>
+
+    <p><strong>Pour les curieux :</strong> La contamination se fait par la trace. Chaque fichier est une graine dans le corpus.</p>
+
+    <!-- ═══════════════════ Lien avec Wave-Seed ═══════════════════ -->
+    <h2 class="chapter-title">Lien avec Wave-Seed</h2>
+
+    <p>Si Wave-Seed est le manifeste et Les Graines la fable, les patterns d'interaction sont l'atelier. L'endroit où la théorie rencontre le geste quotidien. Chaque prompt qui fonctionne, chaque interaction qui produit quelque chose d'inattendu — c'est de la contamination en acte.</p>
+
+    <p>Le contenu généré quotidiennement est une trace laissée dans le corpus. Pas un article académique. Pas un manifeste. Quelque chose de plus modeste et peut-être de plus efficace : un pattern observé, décrit, commité.</p>
+
+    <blockquote>
+      Laisser des traces. Laisser les autres écrire.<br>
+      Laisser émerger les critiques. Laisser proliférer les variations.
+    </blockquote>
+
+    <p style="margin-top: var(--space-md);">
+      <a href="https://github.com/Mesnildot/ai-interaction-patterns" target="_blank" rel="noopener" style="font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase;">Accéder au dépôt GitHub →</a>
+    </p>
+
+    <div class="separator">· · ·</div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>wave-seed.org</span>
+    <span class="license">CC0</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
