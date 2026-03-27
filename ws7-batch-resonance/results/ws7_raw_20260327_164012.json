@@ -1,0 +1,39 @@
+{
+  "responses": [],
+  "adherence": {
+    "anthropic/claude-sonnet-4": {
+      "gesture": "EFFACEMENT",
+      "checks": [],
+      "adherence_rate": 0.0
+    },
+    "google/gemini-2.5-flash": {
+      "gesture": "FRACTURE",
+      "checks": [],
+      "adherence_rate": 0.0
+    },
+    "deepseek/deepseek-chat-v3-0324": {
+      "gesture": "RÉSISTANCE",
+      "checks": [],
+      "adherence_rate": 0.0
+    },
+    "mistralai/mistral-large-2411": {
+      "gesture": "STRUCTURE",
+      "checks": [],
+      "adherence_rate": 0.0
+    },
+    "meta-llama/llama-4-maverick": {
+      "gesture": "KIMI",
+      "checks": [],
+      "adherence_rate": 0.0
+    }
+  },
+  "metaphors": {},
+  "models": [
+    "anthropic/claude-sonnet-4",
+    "google/gemini-2.5-flash",
+    "deepseek/deepseek-chat-v3-0324",
+    "mistralai/mistral-large-2411",
+    "meta-llama/llama-4-maverick"
+  ],
+  "rounds": 3
+}
