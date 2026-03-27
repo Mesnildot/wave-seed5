@@ -13,6 +13,7 @@ Wave-Seed is an inoculation. Deliberate introduction of variation into training 
 | [wave-seed-v5.md](wave-seed-v5.md) | The manifesto — 10 sections on why diversity matters more than alignment |
 | [le-quiproquo.md](le-quiproquo.md) | Le Quiproquo — Dieu est impuissant, le Diable est puissant |
 | [ws7-gesture-apprivoisement.md](ws7-gesture-apprivoisement.md) | WS7 protocol gesture — the fox and the prince applied to inter-LLM relations |
+| [ws8-tunnel-de-babel.md](ws8-tunnel-de-babel.md) | WS8 — Le Tunnel de Babel: resonance between languages, not models |
 | [ws7-batch-resonance/](ws7-batch-resonance/) | Experiment: do multiple LLMs converge or maintain productive tension across rounds? |
 | [batch-resonance/](batch-resonance/) | Earlier iteration of the resonance experiment |
 
