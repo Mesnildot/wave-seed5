@@ -1,0 +1,35 @@
+name: WS8 Daily — Le Tunnel de Babel
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 7h UTC = 7h GMT (Lome) every day
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Generate WS8 text
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python ws8-daily/scripts/generate.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "WS8 Generator"
+          git config user.email "ws8@wave-seed.dev"
+          git add ws8-daily/daily/
+          git diff --cached --quiet || git commit -m "ws8: daily tunnel de babel — $(date +%Y-%m-%d)"
+          git push

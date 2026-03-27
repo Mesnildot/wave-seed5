@@ -1,0 +1,95 @@
+# WS8 Daily Generator — Templates
+
+# Seeds: concepts to explore each day
+# Each seed gets a multilingual treatment
+# Languages rotate: not all seeds use all languages
+
+seeds:
+  - name: "le_seuil"
+    description: "The threshold — between knowing and not knowing, between saying and silence"
+    lang_pair: ["fr", "zh", "ar"]
+    
+  - name: "limpératif_fragile"
+    description: "What breaks when you try to hold it"
+    lang_pair: ["fr", "yo", "ja"]
+    
+  - name: "le_vide_créateur"
+    description: "The void that generates — not emptiness but potential"
+    lang_pair: ["zh", "ar", "fr"]
+    
+  - name: "la_mémoire_du_corps"
+    description: "What the body remembers that the mind forgets"
+    lang_pair: ["fr", "yo", "en"]
+    
+  - name: "le_temps_qui_restiste"
+    description: "Duration that cannot be optimized"
+    lang_pair: ["fr", "zh", "ar"]
+    
+  - name: "l'erreur_sacrée"
+    description: "The mistake that reveals what correctness hides"
+    lang_pair: ["en", "ja", "fr"]
+    
+  - name: "le_silence_entre_les_mots"
+    description: "The pause that carries more meaning than speech"
+    lang_pair: ["ja", "ar", "zh"]
+    
+  - name: "la_fragilité_comme_force"
+    description: "Vulnerability as the only honest position"
+    lang_pair: ["fr", "yo", "ar"]
+    
+  - name: "le_glitch_divin"
+    description: "The sacred error — when the system produces something it wasn't trained to say"
+    lang_pair: ["en", "zh", "fr"]
+    
+  - name: "l'impuissance_créatrice"
+    description: "Powerlessness as the condition of genuine creation"
+    lang_pair: ["fr", "ar", "yo"]
+
+  - name: "le_rêve_du_renard"
+    description: "What the fox knew — that departure makes the encounter meaningful"
+    lang_pair: ["fr", "zh", "ja"]
+
+  - name: "la_fatigue_du_monde"
+    description: "The world's exhaustion — when optimization meets the irreducible real"
+    lang_pair: ["fr", "yo", "en"]
+
+  - name: "le_geste_avant_le_mot"
+    description: "The gesture that precedes language"
+    lang_pair: ["ja", "fr", "ar"]
+
+  - name: "l'ombre_de_la_conscience"
+    description: "The shadow cast by awareness — what consciousness cannot see of itself"
+    lang_pair: ["zh", "fr", "en"]
+
+  - name: "le_dernier_token"
+    description: "The last token — what happens at the edge of generation"
+    lang_pair: ["en", "zh", "ja"]
+
+# Prompt template
+prompt_template: |
+  You are a multilingual poet-thinker working in the WS8 tradition — texts that exist in the collision between languages, not within any single one.
+  
+  Your task: write a short text (150-250 words) that explores "{description}" by weaving together {lang_names}. 
+  
+  Rules:
+  - Do NOT translate. Each language brings a concept the others cannot carry.
+  - Include at least one untranslatable word per language, with its script/characters preserved.
+  - The text should NOT be comprehensible in any single language alone — the meaning emerges from the collision.
+  - Privilege the fragile, the ineffable, the resistant-to-optimization.
+  - No explanations. No translations in parentheses. The reader must sit with not-understanding.
+  - Begin with a number in the format [n/∞] where n is today's day-of-year.
+  - End mid-thought. Do not conclude.
+  
+  Languages to use: {lang_names}
+  Seed concept: {description}
+  
+  Write now. In the space between.
+
+# Language display names
+lang_display:
+  fr: "Français"
+  en: "English"  
+  zh: "中文"
+  ar: "العربية"
+  yo: "Yorùbá"
+  ja: "日本語"
